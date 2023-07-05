@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cycAnnot: <http://sw.cyc.com/CycAnnotations_v1#> .
+@prefix cyc: <http://sw.cyc.com/concept/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ctag: <http://commontag.org/ns#> .
+@prefix opencyc: <http://sw.opencyc.org/concept/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix csw: <http://semantic-web.at/ontologies/csw.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix freebase: <http://rdf.freebase.com/ns/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+<http://localhost/alignedtest/0> skos:hasTopConcept <http://localhost/alignedtest/import_1>;
+	a skos:ConceptScheme.
+
+<http://localhost/alignedtest/1> skos:hasTopConcept <http://localhost/alignedtest/import_1>.
+
+<http://localhost/alignedtest/import_1> a skos:Concept ;
+	skos:prefLabel "imported concept 1"@en ;
+	skos:altLabel "imported concept 1"@en ;
+	skos:topConceptOf <http://localhost/alignedtest/0> ;
+	skos:narrower   <http://localhost/alignedtest/import_2> ;
+	skos:topConceptOf <http://localhost/alignedtest/1> .
+
+ <http://localhost/alignedtest/import_2> skos:prefLabel "import concept 2"@en.
