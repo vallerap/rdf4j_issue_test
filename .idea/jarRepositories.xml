@@ -22,6 +22,11 @@
       <option name="url" value="https://mvn.semantic-web.at/nexus/repository/releases/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="libs" />
+      <option name="name" value="libs" />
+      <option name="url" value="$PROJECT_DIR$/libs" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="pp-dev" />
       <option name="name" value="Semantic Web Company pp-dev group" />
       <option name="url" value="https://mvn.semantic-web.at/nexus/repository/pp-dev/" />
